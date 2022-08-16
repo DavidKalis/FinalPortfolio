@@ -1,0 +1,49 @@
+.container-work {
+  display: grid;
+  grid-template-columns: repeat(10, 1.3fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 0px 26px;
+  grid-auto-flow: row;
+  color: red;
+}
+
+.Forkify {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.Natours {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.Sign-In-Up- {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.GameIFY- {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.Oceano {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.Bankist {
+  grid-area: 1 / 6 / 2 / 7;
+}
+
+.PiggyGame {
+  grid-area: 1 / 7 / 2 / 8;
+}
+
+.Mapty {
+  grid-area: 1 / 8 / 2 / 9;
+}
+
+.Netflix-Mulan {
+  grid-area: 1 / 9 / 2 / 10;
+}
+
+.Disney-Eth\.\.\. {
+  grid-area: 1 / 10 / 2 / 11;
+}

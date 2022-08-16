@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="wpage">
+      <h1 class="wtext">Hi,</h1>
+      <h1 class="wtext">I'm David,</h1>
+      <h1 class="wtext">web developer</h1>
+      <p class="fed">Front End Developer</p>
+
+      <a href="#contmepage" class="cbtn">Contact me!</a>
+    </header>
+
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+
+    <div class="navigation">
+      <div class="menuToggle"></div>
+      <ul>
+        <li class="list" style="--clr: #5100d5" ;>
+          <a href="#aboutmepage">
+            <span class="icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <span class="text">About</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#skillpage">
+            <span class="icon"
+              ><ion-icon name="library-outline"></ion-icon>
+            </span>
+            <span class="text">Skills</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#workpage">
+            <span class="icon"
+              ><ion-icon name="color-palette-outline"></ion-icon
+            ></span>
+            <span class="text">Work</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#contmepage">
+            <span class="icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </span>
+            <span class="text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="shit">
+      <div class="shadow"></div>
+      <div class="bowl">
+        <div class="liquid"></div>
+      </div>
+    </section>
+
+    <div class="aboutme">
+      <section id="aboutmepage" class="abtme">
+        <h1 class="abtme1">Myself & I</h1>
+        <h2 class="abtme2">
+          I'm a Front-End Developer from Slovakia. I have a serious interest for
+          creating responsive, dynamic user experiences, UI effects and a bit
+          animations.
+        </h2>
+
+        <h2 class="abtme3">
+          Well-organised person, problem solver. Interested in the entire
+          frontend spectrum and working with small and big group of talented
+          people.
+        </h2>
+      </section>
+    </div>
+
+    <div class="myskills">
+      <section id="skillpage" class="skills">
+        <div class="swrap">
+          <h1 class="stext1">My Skills & Experience</h1>
+
+          <h2 class="stext2">
+            I created responsive small and medium websites that are fast, easy
+            to use, and built with best practices.
+          </h2>
+
+          <h2 class="stext3">
+            The main area of my expertise is front-end development, HTML,
+            CSS/SASS,JS, custom plugins, features, animations, and coding
+            interactive layouts.
+          </h2>
+
+          <h2 class="stext4">
+            I also have interest in full-stack development experience.
+          </h2>
+        </div>
+
+        <img
+          src="/Icon LOGO/Untitled-3-1.png"
+          alt="Different  frameworks"
+          class="sphoto"
+        />
+      </section>
+    </div>
+
+    <div class="workcontainer">
+      <section id="workpage" class="work">
+        <div class="Forkify">Forkify</div>
+        <div class="Natours">Natours</div>
+        <div class="Sign-In-Up">Sign-In-Up-</div>
+        <div class="GameIFY">GameIFY-</div>
+        <div class="Oceano">Oceano</div>
+        <div class="Bankist">Bankist</div>
+        <div class="PiggyGame">PiggyGame</div>
+        <div class="Mapty">Mapty</div>
+        <div class="Netflix-Mulan">Netflix-Mulan</div>
+        <div class="Disney-Eth">Disney-Eth</div>
+      </section>
+    </div>
+
+    <div class="contactme">
+      <section id="contmepage" class="cntme">
+        <h1 class="h1cnt">Contact Me</h1>
+
+        <form>
+          <input
+            type="text"
+            class="contact-form-name cntf"
+            placeholder="Your name"
+          />
+
+          <input
+            type="email"
+            class="contact-form-email cntf"
+            placeholder="Your email"
+          />
+
+          <input
+            type="text"
+            class="contact-form-subject cntf"
+            placeholder="Subject"
+          />
+
+          <textarea
+            class="contact-form-message cntf"
+            placeholder="Your message"
+          ></textarea>
+        </form>
+
+        <a href="#" class="contact-form-btn" onclick="sendMail()">Send!</a>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("fixJgTQRCqSyzhwQl");
+      })();
+    </script>
+  </body>
+</html>

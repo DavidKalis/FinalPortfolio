@@ -1,0 +1,70 @@
+// SKILLS SECTION
+
+.myskills {
+  display: flex;
+  scroll-snap-type: y mandatory;
+  letter-spacing: 2px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swrap {
+  width: 100%;
+}
+
+.sphoto {
+  display: flex;
+  justify-items: flex-end;
+  flex-basis: 12.5rem;
+  top: 12.5rem;
+  left: 4.688rem;
+  height: 37.5rem;
+  position: relative;
+}
+
+.stext1 {
+  display: flex;
+  position: relative;
+  font-size: 6em;
+  max-width: 100%;
+  top: 16rem;
+  left: 10.3rem;
+  color: $color-white;
+}
+
+.stext2 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.3em;
+  font-weight: 300;
+  max-width: 100%;
+  top: 19.5rem;
+  left: 10.3rem;
+  color: $color-white;
+}
+
+.stext3 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.4em;
+  font-weight: 300;
+  max-width: 100%;
+  top: 23.5rem;
+  left: 10.3rem;
+  color: $color-white;
+}
+
+.stext4 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.4em;
+  font-weight: 300;
+  white-space: pre-line;
+  max-width: 100%;
+  top: 25rem;
+  left: 10.3rem;
+  color: $color-white;
+}

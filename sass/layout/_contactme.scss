@@ -1,0 +1,16 @@
+.contact-form-btn {
+  display: flex;
+  position: relative;
+  top: 18rem;
+  left: 40rem;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid $color-purple;
+  max-width: 150px;
+  margin: 0 15px;
+  color: $color-purple;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 20px;
+  overflow: hidden;
+  transition: 0.6s;
+}

@@ -1,0 +1,432 @@
+@import "layout/_navbar";
+@import "layout/_skills";
+
+$color-primarybg: hsl(0, 0%, 11%);
+$color-primarynav: hsl(0, 0%, 16%);
+$color-white: hsl(0, 0%, 100%);
+$color-purple: hsl(285, 100%, 39%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: $color-primarybg;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wpage {
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 3rem;
+  max-width: 100%;
+  top: 15rem;
+  left: 10.3rem;
+  color: $color-white;
+}
+
+.cbtn {
+  color: $color-purple;
+  font-size: 20px;
+  letter-spacing: 3px;
+  border: 1px solid $color-purple;
+  text-decoration: none;
+  top: 50px;
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.fed {
+  position: relative;
+  top: 1.3rem;
+  font-size: 1.6rem;
+  letter-spacing: 6px;
+  color: hsl(0, 3%, 34%);
+}
+
+.bowl {
+  position: relative;
+  width: 18.75rem;
+  height: 18.75rem;
+  background: hsla(0, 0%, 100%, 0.1);
+  left: 77rem;
+  top: -8rem;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  transform-origin: bottom center;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  75% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(0deg);
+  }
+}
+
+.bowl::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 1.875rem;
+  border: 15px solid hsl(0, 0%, 27%);
+  border-radius: 50%;
+  box-shadow: 0 10px hsl(0, 0%, 13%);
+}
+
+.bowl::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 9.375rem;
+  height: 5rem;
+  background: hsla(0, 0%, 100%, 0.05);
+}
+
+.liquid {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: $color-purple;
+  border-bottom-left-radius: 9.375rem;
+  border-bottom-right-radius: 9.375rem;
+  filter: drop-shadow(0 0 5rem $color-purple);
+  transform-origin: top center;
+  animation: animateLiquid 5s linear infinite;
+}
+
+@keyframes animateLiquid {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.liquid::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 1.25rem;
+  background-color: hsl(285, 92%, 44%);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 5rem $color-purple);
+}
+
+.shadow {
+  position: absolute;
+  top: calc(50% + 57px);
+  left: 54%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  height: 30px;
+  background: hsla(0, 0%, 0%, 0.5);
+  border-radius: 50%;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.aboutme {
+  z-index: 1;
+  scroll-snap-type: y mandatory;
+  letter-spacing: 2px;
+}
+
+.abtme {
+  position: relative;
+}
+
+.abtme1 {
+  position: relative;
+  font-size: 6em;
+  max-width: 100%;
+  top: 16rem;
+  left: 10.3rem;
+  color: $color-white;
+}
+
+.abtme2 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.4em;
+  font-weight: 300;
+  white-space: pre-line;
+  max-width: 100%;
+  top: 18rem;
+  left: 10.3rem;
+  color: $color-white;
+}
+
+.abtme3 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.4em;
+  font-weight: 300;
+  white-space: pre-line;
+  max-width: 100%;
+  top: 20rem;
+  left: 10.3rem;
+  color: $color-white;
+}
+
+// WORK GRID
+
+.work {
+  position: relative;
+  display: grid;
+  margin: 60px;
+  grid-template-columns: repeat(10, 1.3fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 0px 1px;
+  grid-auto-flow: row;
+  color: white;
+  left: 3rem;
+}
+
+.Forkify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.Natours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.Sign-In-Up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.GameIFY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.Oceano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.Bankist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 6 / 2 / 7;
+}
+
+.PiggyGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 7 / 2 / 8;
+}
+
+.Mapty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 8 / 2 / 9;
+}
+
+.Netflix-Mulan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 9 / 2 / 10;
+}
+
+.Disney-Eth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-purple;
+  color: $color-white;
+  grid-area: 1 / 10 / 2 / 11;
+}
+
+// CONTACT ME FORM
+
+.cntme {
+  max-width: 100%;
+  left: 10.3rem;
+  color: $color-white;
+}
+
+.h1cnt {
+  display: flex;
+  position: relative;
+  font-size: 6em;
+  max-width: 100%;
+  top: 16rem;
+  left: 10.3rem;
+  letter-spacing: 1px;
+  color: $color-white;
+}
+
+.contact-form-name {
+  display: flex;
+  position: relative;
+  top: 20rem;
+  left: 10.3rem;
+  margin: 16px 0;
+  border: 0;
+  background: $color-primarynav;
+  padding: 20px 120px 20px 20px;
+  outline: none;
+  color: $color-white;
+  transition: 0.6s;
+}
+
+.contact-form-email {
+  display: flex;
+  position: relative;
+  top: 15.55rem;
+  left: 31.3rem;
+  margin: 16px 0;
+  border: 0;
+  background: $color-primarynav;
+  padding: 20px 120px 20px 20px;
+  outline: none;
+  color: $color-white;
+  transition: 0.6s;
+}
+
+.contact-form-subject {
+  display: flex;
+  position: relative;
+  top: 16rem;
+  left: 10.3rem;
+  margin: 16px 0;
+  border: 0;
+  background: $color-primarynav;
+  padding: 20px 455px 20px 20px;
+  outline: none;
+  color: $color-white;
+  transition: 0.6s;
+}
+
+.contact-form-message {
+  display: flex;
+  position: relative;
+  top: 16.5rem;
+  left: 10.3rem;
+  margin: 16px 0;
+  border: 0;
+  background: $color-primarynav;
+  padding: 20px 467px 60px 20px;
+  outline: none;
+  color: $color-white;
+  transition: 0.6s;
+}
+
+.contact-form-btn {
+  color: $color-purple;
+  font-size: 20px;
+  letter-spacing: 3px;
+  border: 1px solid $color-purple;
+  text-decoration: none;
+  top: 17rem;
+  left: 36.8rem;
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+.contact-form-btn:hover {
+  background: $color-purple;
+  color: $color-white;
+  box-shadow: 0 0 50px $color-purple;
+}
+
+.cntf:focus {
+  box-shadow: 0 0 10px 4px $color-purple;
+}
